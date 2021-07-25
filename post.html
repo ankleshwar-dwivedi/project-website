@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="post.css">
+		<title>
+			Post a Question
+		</title>
+	</head>
+	<body>
+		<form name="question-posting">
+			<table>
+				<tr>
+					<td>
+						<input type="text" id="title" name="question-posting" placeholder="Enter the title">
+						<label for="title" id="word-count"><!--Iski positioning aisi ho ki upar wale input ke ek dam right kone mein aaye, reddit ke posting page ko dekhna reference ke liye-->
+							0/300
+						</p>
+					</td>
+					<td>
+						<label for="title" id="title-error">
+							Something
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<select name="question-posting" id="subject">
+							<option value="" disabled selected>Subject of your question</option>
+							<option value="cn">Computer Networks</option>
+							<option value="java">Java</option>
+							<option value="soft-eng">Software Engineering</option>
+							<option value="web-d">Web Design</option>
+							<option value="cbnst">CBNST</option>
+						</select>
+						<label for="subject" id="subject-error">
+							Something
+						</label>
+					</td>
+					<td>
+						<select name="question-posting" id="topic"> <!--Baad mein dalunga iski pura working-->
+							<option value="" disabled selected>Topic(optional)</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="textbox" id="description" name="question-posting" placeholder="Question description(optional)">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" id="submit" name="question-posting" value="Post">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
